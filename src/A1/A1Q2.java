@@ -17,6 +17,7 @@ public class A1Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // Create a scanner for input
         Scanner input = new Scanner (System.in);
         // Ask for what temperature in celsius needs to be converted to fahrenhiet
         System.out.println("Please enter a temperature in degrees Celsius you would like to convert to degrees Fahrenheit");
