@@ -8,7 +8,7 @@ package A1;
 import java.util.Scanner;
 
 /**
- *
+ *Finds the Quotient and Remainder of 2 Chosen Integers
  * @author isakm3897
  */
 public class A1Q3 {

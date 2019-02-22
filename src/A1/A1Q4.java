@@ -8,7 +8,7 @@ package A1;
 import java.util.Scanner;
 
 /**
- *
+ *Calculates the Area of a Circle
  * @author isakm3897
  */
 public class A1Q4 {

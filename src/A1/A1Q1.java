@@ -8,7 +8,7 @@ package A1;
 import java.util.Scanner;
 
 /**
- *
+ *Calculates the Sum and Product of 2 Integers
  * @author isakm3897
  */
 public class A1Q1 {
