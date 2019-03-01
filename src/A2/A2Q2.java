@@ -8,11 +8,11 @@ package A2;
 import java.util.Scanner;
 
 /**
- * Determining Which of the Chosen 2 Numbers Input is the Largest One
+ * Ordering Numbers in Ascending Order
  *
  * @author isakm3897
  */
-public class A2Q1 {
+public class A2Q2 {
 
     /**
      * @param args the command line arguments
@@ -27,11 +27,11 @@ public class A2Q1 {
         System.out.println("Please enter another integer");
         int integerTwo = input.nextInt();
 
-        //States which integer is bigger in value
+        // States integers in ascending order
         if (integerOne > integerTwo) {
-            System.out.println("The biggest number is " + integerOne);
+            System.out.println("Your numbers in ascending order are " + integerOne + ", " + integerTwo);
         } else if (integerTwo > integerOne) {
-            System.out.println("The biggest number is " + integerTwo);
+            System.out.println("Your numbers in ascending order are " + integerTwo + ", " + integerOne);
         }
     }
 

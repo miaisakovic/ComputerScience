@@ -8,11 +8,11 @@ package A2;
 import java.util.Scanner;
 
 /**
- * Determining Which of the Chosen 2 Numbers Input is the Largest One
+ * Stating if a Chosen Integer is Even or Odd
  *
  * @author isakm3897
  */
-public class A2Q1 {
+public class A2Q3 {
 
     /**
      * @param args the command line arguments
@@ -24,14 +24,12 @@ public class A2Q1 {
         //Asks user for 2 integers 
         System.out.println("Please enter an integer");
         int integerOne = input.nextInt();
-        System.out.println("Please enter another integer");
-        int integerTwo = input.nextInt();
 
-        //States which integer is bigger in value
-        if (integerOne > integerTwo) {
-            System.out.println("The biggest number is " + integerOne);
-        } else if (integerTwo > integerOne) {
-            System.out.println("The biggest number is " + integerTwo);
+        //States if the integer is even or odd
+        if (integerOne % 2 == 1) {
+            System.out.println(integerOne + " integer is an odd number.");
+        } else if (integerOne % 2 == 0) {
+            System.out.println(integerOne + " integer is an even number.");
         }
     }
 

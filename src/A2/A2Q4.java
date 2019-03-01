@@ -8,11 +8,11 @@ package A2;
 import java.util.Scanner;
 
 /**
- * Determining Which of the Chosen 2 Numbers Input is the Largest One
+ * Is the Integer Special?
  *
  * @author isakm3897
  */
-public class A2Q1 {
+public class A2Q4 {
 
     /**
      * @param args the command line arguments
@@ -24,15 +24,16 @@ public class A2Q1 {
         //Asks user for 2 integers 
         System.out.println("Please enter an integer");
         int integerOne = input.nextInt();
-        System.out.println("Please enter another integer");
-        int integerTwo = input.nextInt();
 
-        //States which integer is bigger in value
-        if (integerOne > integerTwo) {
-            System.out.println("The biggest number is " + integerOne);
-        } else if (integerTwo > integerOne) {
-            System.out.println("The biggest number is " + integerTwo);
+        //States whether or not the chosen integer is special
+        if (integerOne % 11 == 0) {
+            System.out.println(integerOne + " is special!");
+        } else if (integerOne % 11 == 1) {
+            System.out.println(integerOne + " is special!");
+        } else if (integerOne % 11 > 1) {
+            System.out.println(integerOne + " is not special:(");
         }
+
     }
 
 }
