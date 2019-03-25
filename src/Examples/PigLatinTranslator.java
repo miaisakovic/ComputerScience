@@ -36,7 +36,10 @@ public class PigLatinTranslator {
             String vowels = "aeiouAEIOU";
             //is the letter in the vowel string
             if(vowels.indexOf(letter)>= 0){
-                
+                //is the vowel at the start
+                if(i == 0){
+                    translate = word + "way"; 
+                }else{
             }
             
         }

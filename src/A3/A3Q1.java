@@ -6,6 +6,7 @@
 package A3;
 
 /**
+ * A Program That Will Calculate the Sum of the First 100 Odd Numbers
  *
  * @author isakm3897
  */
@@ -21,7 +22,9 @@ public class A3Q1 {
         while (count < 200) {
             sum = sum + count;
             count = count + 2;
-        }System.out.println("The sum of the first 100 odd numbers is " + sum);
+        }
+        // state the sum of the first 100 odd numbers added together
+        System.out.println("The sum of the first 100 odd numbers is " + sum);
     }
 
 }

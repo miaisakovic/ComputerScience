@@ -8,6 +8,7 @@ package A3;
 import java.util.Scanner;
 
 /**
+ * Exponents
  *
  * @author isakm3897
  */
@@ -26,13 +27,17 @@ public class A3Q2 {
         System.out.println("Please enter the exponent");
         int exponent = input.nextInt();
         
+        // counter variable used to control the loop
         int total = 1;
         
-        for (int i = 1; i <= exponent; i++){
-            total = total*baseInteger;
+        // loop to mulitply an integer by itself n(exponenet value) times
+        for (int i = 1; i <= exponent; i++) {
+            total = total * baseInteger;
         }
-            System.out.println(baseInteger + "^" + exponent + " = " + total);
         
+        //State the base integer and exponenet, and their product
+        System.out.println(baseInteger + "^" + exponent + " = " + total);
+
     }
-    
+
 }
