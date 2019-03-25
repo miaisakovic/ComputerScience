@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Examples;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author isakm3897
+ */
+public class PigLatinTranslator {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Create scanner
+        Scanner input = new Scanner(System.in);
+        //Get a word to translate
+        String word = input.nextLine();
+        
+        //create a new translated word string
+        String translate = "";
+        
+        //get the length of the word
+        int wordLength = word.length();
+        
+        // go through each letter
+        for(int i = 0; i < wordLength; i++){
+            // get letter at position i 
+            char letter = word.charAt(i);
+           
+            String vowels = "aeiouAEIOU";
+            //is the letter in the vowel string
+            if(vowels.indexOf(letter)>= 0){
+                
+            }
+            
+        }
+    }
+    
+}
