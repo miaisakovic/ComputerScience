@@ -8,27 +8,22 @@ package A4;
 import java.util.Scanner;
 
 /**
- * The First Two Letters of a Word
  *
  * @author isakm3897
  */
-public class A4Q1 {
+public class A4Q3 {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         // Create a scanner for input
         Scanner input = new Scanner(System.in);
 
         //Asks user for a word
         System.out.println("Please enter a word");
         String word = input.nextLine();
-
-        char letterOne = word.charAt(0);
-        char letterTwo = word.charAt(1);
-
-        System.out.println("The first two letters are " + letterOne + letterTwo);
+        
     }
-
+    
 }

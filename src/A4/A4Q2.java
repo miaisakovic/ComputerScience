@@ -8,11 +8,10 @@ package A4;
 import java.util.Scanner;
 
 /**
- * The First Two Letters of a Word
  *
  * @author isakm3897
  */
-public class A4Q1 {
+public class A4Q2 {
 
     /**
      * @param args the command line arguments
@@ -24,11 +23,19 @@ public class A4Q1 {
         //Asks user for a word
         System.out.println("Please enter a word");
         String word = input.nextLine();
-
-        char letterOne = word.charAt(0);
+        
+        
         char letterTwo = word.charAt(1);
-
-        System.out.println("The first two letters are " + letterOne + letterTwo);
+        
+        int wordLength = word.length();
+        
+        // go through each letter
+        for(int i = 0; i < wordLength; i++){
+            // get letter at position i 
+            char letter = word.charAt(i-1);
+            String str = word.substring(1,i-1);
+        }
+        System.out.println(word.substring(1,i-1));
     }
-
+    
 }

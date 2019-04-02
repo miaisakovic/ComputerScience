@@ -40,9 +40,21 @@ public class PigLatinTranslator {
                 if(i == 0){
                     translate = word + "way"; 
                 }else{
+                    // splitting the word at the vowel
+                    String start = word.substring(0,i);
+                    String ending = word.substring(i);
+                    // create the translation
+                    translate = ending + start + "ay"; 
+                }
+                // stop the vowel searching loop
+                break;
             }
             
         }
+        
+        // output the translation
+        System.out.println(word + " in Pig Latin is " + translate);
+        
     }
     
 }

@@ -8,7 +8,7 @@ package Examples;
 import java.util.Scanner;
 
 /**
- *
+ *        
  * @author isakm3897
  */
 public class UbbiDubbiTranslator {
