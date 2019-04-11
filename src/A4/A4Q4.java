@@ -8,11 +8,11 @@ package A4;
 import java.util.Scanner;
 
 /**
- * Outputting the Letters Between the First and Last Letter
+ * Outputting the Number of Times "Code" was in the Word
  *
  * @author isakm3897
  */
-public class A4Q2 {
+public class A4Q4 {
 
     /**
      * @param args the command line arguments
@@ -25,11 +25,17 @@ public class A4Q2 {
         System.out.println("Please enter a word");
         String word = input.nextLine();
 
-        //Get the length of the word
-        int wordLength = word.length();
+        //Create variables to store the number of words inputed by the user
+        int numberOfWords = 0;
 
-        //Outputs the letters between the first and the last
-        System.out.println(word.substring(1, wordLength - 1));
+        //Loop through to get the number of times "code" was in the word
+        while (word.contains("code")) {
+            int code = word.indexOf("code");
+            numberOfWords = numberOfWords + 1;
+            word = word.substring(code + 4);
+        }
+        //Outputs the number of times "code" was in the word 
+        System.out.println("The String contains " + numberOfWords);
     }
 
 }

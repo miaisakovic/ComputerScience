@@ -8,11 +8,11 @@ package A4;
 import java.util.Scanner;
 
 /**
- * The First Two Letters of a Word
+ * Reverse String
  *
  * @author isakm3897
  */
-public class A4Q1 {
+public class A4Q8 {
 
     /**
      * @param args the command line arguments
@@ -22,15 +22,19 @@ public class A4Q1 {
         Scanner input = new Scanner(System.in);
 
         //Asks user for a word
-        System.out.println("Please enter a word");
+        System.out.println("Please enter a string");
         String word = input.nextLine();
-        
-        //Gets the first two letters 
-        char letterOne = word.charAt(0);
-        char letterTwo = word.charAt(1);
-        
-        //Outputs the first two letters of the word
-        System.out.println("The first two letters are " + letterOne + letterTwo);
+
+        //Creates a new string to store the reversed word 
+        String newWord = "";
+
+        //Reverses the string 
+        for (int i = word.length() - 1; i >= 0; i--) {
+            newWord = newWord + word.charAt(i);
+        }
+
+        //Outputs the word backwards 
+        System.out.println("This String backwards is" + newWord);
     }
 
 }
