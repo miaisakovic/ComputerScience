@@ -28,10 +28,18 @@ public class A2Q8 {
         int carSpeed = input.nextInt();
 
         //Tell user if they are within the speed limit or not
-        if (speedLimit > carSpeed) {
+        if (speedLimit >= carSpeed) {
             System.out.println("Congratulations, you are within the speed limit!");
-        }else {
-            System.out.println("You are speeding and your fine is $500.");
+        } else {
+            int amountOverTheLimit = carSpeed - speedLimit;
+            if (amountOverTheLimit <= 20 && amountOverTheLimit >= 1) {
+                System.out.println("You are speeding and your fine is $100.");
+            } else if (amountOverTheLimit >= 21 && amountOverTheLimit <= 30) {
+                System.out.println("You are speeding and your fine is $270.");
+            } else if (amountOverTheLimit >= 31){
+                System.out.println("You are speeding and your fine is $500.");
+            }
+
         }
 
     }

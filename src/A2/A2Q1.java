@@ -32,6 +32,8 @@ public class A2Q1 {
             System.out.println("The biggest number is " + integerOne);
         } else if (integerTwo > integerOne) {
             System.out.println("The biggest number is " + integerTwo);
+        } else {
+            System.out.println("Since the integers are equal, neither integer is greater than the other.");
         }
     }
 

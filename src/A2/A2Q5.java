@@ -29,7 +29,7 @@ public class A2Q5 {
         //Program states if the party is great, good, or bad
         if (tea >= 5 && candies >= 5){
             System.out.println("That is a good tea party!");
-        }else if (tea*2 >= candies || candies*2 >= tea){
+        }else if (tea*2 >= candies && candies >= 5 || candies*2 >= tea && tea >= 5){
             System.out.println("That is a great tea party!!!");
         }else {
             System.out.println("That is a bad tea party :(");

@@ -32,6 +32,8 @@ public class A2Q2 {
             System.out.println("Your numbers in ascending order are " + integerOne + ", " + integerTwo);
         } else if (integerTwo > integerOne) {
             System.out.println("Your numbers in ascending order are " + integerTwo + ", " + integerOne);
+        } else {
+            System.out.println("Since the numbers are equal, they cannot be put into ascending order.");
         }
     }
 
