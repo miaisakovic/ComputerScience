@@ -30,7 +30,7 @@ public class A5Q2 {
         //Create array to store the value of the integers
         int[] valueOfInteger = new int[numIntegers];
 
-        // Create variables to store the value of the highest and lowest integer inputed by the user
+        //Create variables to store the value of the highest and lowest integer inputed by the user
         int lowestInteger = 0;
         int highestInteger = 0;
 
@@ -39,11 +39,11 @@ public class A5Q2 {
             //get the value of each integer 
             System.out.println("Enter an integer:");
             valueOfInteger[i] = input.nextInt();
-             
+
             //These varaibles currently store the value of the first integer entered
             lowestInteger = valueOfInteger[i];
             highestInteger = valueOfInteger[i];
-            
+
             //If the value of an integer is lower or higher than the integer the variaqble is currently storing, the variable will than store the value of that new integer
             if (lowestInteger > valueOfInteger[i]) {
                 lowestInteger = valueOfInteger[i];
