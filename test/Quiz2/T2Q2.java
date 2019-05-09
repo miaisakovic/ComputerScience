@@ -36,7 +36,7 @@ public class T2Q2 {
             //check if divisor is actually a divisor 
             if (remainder == 0 && secondRemainder == 0) {
                 System.out.println("The greatest common divisor is " + highestDivisor);
-            }
+            } 
         }
     }
 
