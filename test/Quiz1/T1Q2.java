@@ -38,11 +38,7 @@ public class T1Q2 {
             System.out.println("GraemeMercurian");
         }
 
-        if (antennas < 3 && eyes > 4) {
-            System.out.println("None found");
-        } else if (antennas > 6 && eyes < 2) {
-            System.out.println("None found");
-        } else if (antennas > 2 && eyes > 3) {
+        if (antennas < 3 && eyes > 4 || antennas > 6 && eyes < 2 || antennas > 2 && eyes > 3) {
             System.out.println("None found");
         }
     }
