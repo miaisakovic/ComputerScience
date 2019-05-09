@@ -31,14 +31,12 @@ public class T1Q2 {
         if (antennas >= 3 && eyes <= 4) {
             System.out.println("TroyMartin");
         }
-        if (antennas <= 6 && eyes >= 2) {
+        else if (antennas <= 6 && eyes >= 2) {
             System.out.println("VladSaturnian");
         }
-        if (antennas <= 2 && eyes <= 3) {
+        else if (antennas <= 2 && eyes <= 3) {
             System.out.println("GraemeMercurian");
-        }
-
-        if (antennas < 3 && eyes > 4 || antennas > 6 && eyes < 2 || antennas > 2 && eyes > 3) {
+        } else {
             System.out.println("None found");
         }
     }
