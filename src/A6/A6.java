@@ -42,12 +42,13 @@ public class A6 {
         //Creating string to store the "progress" of Player 2's attempts to figure out the word
         String wordTwo = wordOne;
 
-        //Loop through until player 2 runs out of lives or guesses the full word 
+        //Loop through until player 2 runs out of lives or guesses all of the letters in the word 
         for (int i = 0; i < wordLength + 10; i++) {
             System.out.println(wordTwo);
             System.out.println("Player 2: You have " + lives + " lives. Guess a CAPITAL letter:");
             String letter = input.nextLine();
 
+            //if player 2 guesses a letter that is included in the word
             if (word.contains(letter)) {
                 word = word.replace(letter, letter.toLowerCase());
                 wordTwo = word.replaceAll("[A-Z]", "-");
@@ -100,6 +101,8 @@ public class A6 {
                     System.out.println("        |");
                     System.out.println("=========");
                 }
+
+            // if player 2 guesses a letter that is not included in the word
             } else if (!word.contains(letter) && lives >= 1) {
                 lives = lives - 1;
                 if (lives == 5) {
@@ -143,6 +146,8 @@ public class A6 {
                     System.out.println("        |");
                     System.out.println("=========");
                 }
+
+            // if player 2 runs out of lives 
             } else if (lives == 0) {
                 System.out.println("You have run out of lives. This was the word: " + word);
                 System.out.println("    +---+");
@@ -155,6 +160,7 @@ public class A6 {
                 break;
             }
 
+            // if player 2 guesses all the letters in the word 
             if (!wordTwo.contains("-")) {
                 System.out.println("CONGRADULATIONS!You won!");
                 break;
