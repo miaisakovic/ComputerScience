@@ -17,6 +17,7 @@ public class A7Q2 {
 
     //Procedure-type method
     public static void examGrade(int examPercentage) {
+        //outputing the letter grade corresponding to the exam percentage
         if (examPercentage <= 50 && examPercentage > 0) {
             System.out.println("Your exam grade is F");
         }
@@ -44,7 +45,8 @@ public class A7Q2 {
         //Ask the user for their exam percentage
         System.out.println("Please enter your exam percentage:");
         int examPercentage = input.nextInt();
-
+        
+        //output the letter grade
         examGrade(examPercentage);
 
     }

@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class A7Q1 {
 
-    //function type method
+    //function-type method
     public static double circleArea(double radius, double PI) {
         //Solve for the area
         double area = Math.pow(radius, 2) * PI;
